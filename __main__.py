@@ -5,7 +5,19 @@ def main():
     # Initialize your client
     client = FinvizClient()
 
-    filters = ["sh_avgvol_o1000"]
+    # # High Volume
+    # filters = ["sh_avgvol_o1000"]
+
+    # # Value Trap / Undervalued
+    # filters = ["cap_large", "fa_pe_u15", "fa_pb_u2", "fa_div_o5"]
+
+    # # Momentum / Breakout"
+    # filters = ["sh_avgvol_o1000", "ta_sma20_pa", "ta_perf_52w10o"]
+
+    # Short Squeeze Potential
+    filters = ["sh_short_o20", "sh_avgvol_o500", "ta_perf_up"]
+
+
 
     # Fetch the tickers
     print("Fetching high volume tickers...")
